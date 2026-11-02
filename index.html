@@ -8,11 +8,11 @@
 <meta property="og:url" content="https://kuyee63-prog.github.io/share-video/">
 <meta property="og:title" content="Bikin Konten AI — Tutorial Bikin Konten YouTube Pakai AI">
 <meta property="og:description" content="Tutorial bikin konten YouTube pakai AI, dari nulis naskah sampai upload otomatis. Semua bisa dari HP, tanpa modal. Video baru tiap Selasa, Kamis, dan Sabtu.">
-<meta property="og:image" content="https://i.ytimg.com/vi/jbLuTSpqTOs/hqdefault.jpg">
+<meta property="og:image" content="https://i.ytimg.com/vi/379Unk1somk/hqdefault.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bikin Konten AI — Tutorial Bikin Konten YouTube Pakai AI">
 <meta name="twitter:description" content="Tutorial bikin konten YouTube pakai AI, dari nulis naskah sampai upload otomatis. Semua bisa dari HP, tanpa modal.">
-<meta name="twitter:image" content="https://i.ytimg.com/vi/jbLuTSpqTOs/hqdefault.jpg">
+<meta name="twitter:image" content="https://i.ytimg.com/vi/379Unk1somk/hqdefault.jpg">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #0f1113; color: #f2f2f2; padding: 20px 14px 60px; }
@@ -80,7 +80,11 @@ const videos = [
   { id: "jbLuTSpqTOs", title: "Cara Muse Upload dan Jadwalkan Video YouTube Otomatis", type: "Video", dur: "9:34", url: "https://youtube.com/watch?v=jbLuTSpqTOs" },
   { id: "t7vY7n4Rwm0", title: "Upload Private Dulu, Baru Terbitkan", type: "Short", dur: "0:31", url: "https://youtube.com/shorts/t7vY7n4Rwm0" },
   { id: "N_NPWWz7rJE", title: "Video Jam 7 Pagi Itu Disiapkan Sejak Kemarin", type: "Short", dur: "0:41", url: "https://youtube.com/shorts/N_NPWWz7rJE" },
-  { id: "iRN2nVz2h3I", title: "Nyata vs Ilustrasi, Jangan Tertukar", type: "Short", dur: "0:46", url: "https://youtube.com/shorts/iRN2nVz2h3I" }
+  { id: "iRN2nVz2h3I", title: "Nyata vs Ilustrasi, Jangan Tertukar", type: "Short", dur: "0:46", url: "https://youtube.com/shorts/iRN2nVz2h3I" },
+  { id: "379Unk1somk", title: "Cara Muse Bikin Judul Video yang Bikin Orang Penasaran", type: "Video", dur: "10:15", url: "https://youtube.com/watch?v=379Unk1somk" },
+  { id: "i55kdRYecNw", title: "Minta 20 Judul Sekaligus ke Muse, Ini Prompt-nya", type: "Short", dur: "0:46", url: "https://youtube.com/shorts/i55kdRYecNw" },
+  { id: "rvJE-zuMNOw", title: "Judul Datar Jadi Bikin Penasaran, Cuma Dipoles Dikit", type: "Short", dur: "0:46", url: "https://youtube.com/shorts/rvJE-zuMNOw" },
+  { id: "B6qCNZS_oI4", title: "3 Kesalahan Judul yang Bikin Videomu Sepi", type: "Short", dur: "0:50", url: "https://youtube.com/shorts/B6qCNZS_oI4" }
 ];
 
 function track(kind, id) {
@@ -149,7 +153,7 @@ function renderGrid(q) {
       '<div class="btn-row">' +
         '<a class="btn btn-watch" href="' + v.url + '" target="_blank" rel="noopener" onclick="track(\'watch\', \'' + v.id + '\')">▶ Tonton</a>' +
         '<button class="btn-fb" onclick="shareToFB(' + JSON.stringify(v).replace(/"/g, "&quot;") + ')">📘 Share ke FB</button>' +
-        '<button class="btn-copy" onclick="copyLink(\'' + v.url + "', '" + v.id + "')\">🔗 Salin Link</button>" +
+        '<button class="btn-copy" onclick="copyLink(\'' + v.url + "', '" + v.id + "')">🔗 Salin Link</button>" +
       "</div></div></div>";
   }).join("");
 }

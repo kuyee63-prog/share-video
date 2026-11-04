@@ -8,11 +8,11 @@
 <meta property="og:url" content="https://kuyee63-prog.github.io/share-video/">
 <meta property="og:title" content="Bikin Konten AI — Tutorial Bikin Konten YouTube Pakai AI">
 <meta property="og:description" content="Tutorial bikin konten YouTube pakai AI, dari nulis naskah sampai upload otomatis. Semua bisa dari HP, tanpa modal. Video baru tiap Selasa, Kamis, dan Sabtu.">
-<meta property="og:image" content="https://i.ytimg.com/vi/AUnbrAqOFS8/hqdefault.jpg">
+<meta property="og:image" content="https://i.ytimg.com/vi/plJ7GtwldOo/hqdefault.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bikin Konten AI — Tutorial Bikin Konten YouTube Pakai AI">
 <meta name="twitter:description" content="Tutorial bikin konten YouTube pakai AI, dari nulis naskah sampai upload otomatis. Semua bisa dari HP, tanpa modal.">
-<meta name="twitter:image" content="https://i.ytimg.com/vi/AUnbrAqOFS8/hqdefault.jpg">
+<meta name="twitter:image" content="https://i.ytimg.com/vi/plJ7GtwldOo/hqdefault.jpg">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #0f1113; color: #f2f2f2; padding: 20px 14px 60px; }
@@ -88,7 +88,11 @@ const videos = [
   { id: "AUnbrAqOFS8", title: "Cara Muse Bikin Deskripsi Video yang Bikin Orang Klik", type: "Video", dur: "10:19", url: "https://youtube.com/watch?v=AUnbrAqOFS8" },
   { id: "RTlu4lFvWP4", title: "Deskripsi yang Diabaikan Justru Menentukan Klik", type: "Short", dur: "0:50", url: "https://youtube.com/shorts/RTlu4lFvWP4" },
   { id: "XEJCKQXq84Y", title: "Kalimat Pertama Deskripsi Harus Jawab Janji Judul", type: "Short", dur: "0:54", url: "https://youtube.com/shorts/XEJCKQXq84Y" },
-  { id: "QTVD0M2WwJE", title: "Janji Berlebihan di Deskripsi Bikin Penonton Kecewa", type: "Short", dur: "0:50", url: "https://youtube.com/shorts/QTVD0M2WwJE" }
+  { id: "QTVD0M2WwJE", title: "Janji Berlebihan di Deskripsi Bikin Penonton Kecewa", type: "Short", dur: "0:50", url: "https://youtube.com/shorts/QTVD0M2WwJE" },
+  { id: "plJ7GtwldOo", title: "Cara Muse Bikin Outline Video Sebelum Nulis Naskah", type: "Video", dur: "9:28", url: "https://youtube.com/watch?v=plJ7GtwldOo" },
+  { id: "BLLAKsIFW44", title: "Outline Itu Denah, Bukan Naskahnya", type: "Short", dur: "0:50", url: "https://youtube.com/shorts/BLLAKsIFW44" },
+  { id: "_VqACJTtxYE", title: "Minta Outline Dulu ke Muse, Jangan Naskah Lengkap", type: "Short", dur: "0:52", url: "https://youtube.com/shorts/_VqACJTtxYE" },
+  { id: "JnlUY6kFQwk", title: "3 Kesalahan Outline yang Bikin Naskah Kacau", type: "Short", dur: "0:49", url: "https://youtube.com/shorts/JnlUY6kFQwk" }
 ];
 
 function track(kind, id) {
@@ -157,7 +161,7 @@ function renderGrid(q) {
       '<div class="btn-row">' +
         '<a class="btn btn-watch" href="' + v.url + '" target="_blank" rel="noopener" onclick="track(\'watch\', \'' + v.id + '\')">▶ Tonton</a>' +
         '<button class="btn-fb" onclick="shareToFB(' + JSON.stringify(v).replace(/"/g, "&quot;") + ')">📘 Share ke FB</button>' +
-        '<button class="btn-copy" onclick="copyLink(\'' + v.url + "', '" + v.id + "')\">🔗 Salin Link</button>" +
+        '<button class="btn-copy" onclick="copyLink(\'' + v.url + "', '" + v.id + "')">🔗 Salin Link</button>" +
       "</div></div></div>";
   }).join("");
 }
